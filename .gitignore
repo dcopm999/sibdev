@@ -3,6 +3,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*[~#]
+deals.csv
+
+# Migrations
+**/migrations/**
+!**/migrations/__init__.py
 
 # C extensions
 *.so
