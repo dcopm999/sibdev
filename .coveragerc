@@ -1,0 +1,9 @@
+[run]
+plugins =
+    django_coverage_plugin
+
+omit =
+    *site-packages*
+    **migrations**
+    *tests*
+    *.tox*

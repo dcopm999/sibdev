@@ -19,3 +19,7 @@ class User(AbstractUser):
 
         """
         return reverse("users:detail", kwargs={"username": self.username})
+
+    @property
+    def gems(self) -> set:
+        return set(gem.item for gem in self.customer_set.all())
